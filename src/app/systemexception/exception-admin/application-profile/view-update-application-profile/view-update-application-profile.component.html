@@ -1,0 +1,48 @@
+<div style="width: 100%;">
+    <div class="pageHeaderDiv">
+        <div id="headerLebelDiv">SEW: Application : {{applicationKey}}</div>
+        <div id="headerActions"> </div>
+        <div id="headerBackBtnDiv"> <button mat-raised-button routerLink='/home/systemexception/exceptionAdmin' color="accent">Back</button></div>
+    </div>
+
+    <mat-divider class="matDividerCustomStyle"></mat-divider>
+    <div style="height: 45px;background-color: #e9ecef8a;font-size: 115%;width: 98%; margin-left: 1%;color: blue;">
+        <div >
+            <a> <div style="float: left;margin-top: 10px;width: 2%;padding-left: 1%;"><mat-icon>mode_edit</mat-icon></div>  
+             <div style=" margin-top: 12px;float: left; padding-left: 1%;" (click)="populateDetailsForUpdate(applicationProfileDetails.applicationKey)">Edit Application Profile</div>    
+            </a>
+        </div>
+    </div>
+    <mat-card id="applicationDetailsMatCard">
+        <mat-card-title>Application Details</mat-card-title>
+        <mat-divider></mat-divider>
+        <table>
+            <tr><td class="tableTitleLebel">Line Of Business</td>            <td class="tableValueLebel">{{applicationProfileDetails.lineOFBusiness}}</td></tr>
+            <tr><td class="tableTitleLebel">Application Id</td>              <td class="tableValueLebel">{{applicationProfileDetails.applicationId}}</td></tr>
+            <tr><td class="tableTitleLebel">Sub Application Id</td>          <td class="tableValueLebel">{{applicationProfileDetails.subApplicationId}}</td></tr>
+            <tr><td class="tableTitleLebel">CA #</td>                        <td class="tableValueLebel">{{applicationProfileDetails.ca}}</td></tr>
+            <tr><td class="tableTitleLebel">Description</td>                 <td class="tableValueLebel">{{applicationProfileDetails.description}}</td></tr>
+            <tr><td class="tableTitleLebel">Expected Exception Volume</td>   <td class="tableValueLebel">{{applicationProfileDetails.expectedExceptionVolume}}</td></tr>
+            <tr><td class="tableTitleLebel">Application Url</td>             <td class="tableValueLebel">{{applicationProfileDetails.applicationUrl}}</td></tr>
+            <tr><td class="tableTitleLebel">AppOne Link</td>                 <td class="tableValueLebel">{{applicationProfileDetails.appOneLink}}</td></tr>
+            <tr><td class="tableTitleLebel">AgileRegistry Link</td>          <td class="tableValueLebel">{{applicationProfileDetails.agileRegistryLink}}</td></tr>
+        </table>
+    </mat-card>
+
+    <mat-card id="contactDetailsMatCard">
+        <mat-card-title>Contact Details</mat-card-title>
+        <mat-divider></mat-divider>
+        <table>
+            <tr><td> Team Name</td> <td>{{applicationProfileDetails.teamName}}</td></tr>
+            <tr><td> Team Mail</td> <td>{{applicationProfileDetails.teamMail}}</td></tr>
+            <tr><td> Product Owner Name</td> <td>{{applicationProfileDetails.productOwnerName}}</td></tr>
+            <tr><td> Product Owner Phone</td> <td>{{applicationProfileDetails.productOwnerPhone}}</td></tr>
+            <tr><td> Product Owner Email</td> <td>{{applicationProfileDetails.productOwnerEmail}}</td></tr>
+            <tr><td> TechLead Name</td> <td>{{applicationProfileDetails.techLeadName}}</td></tr>
+            <tr><td> TechLead Email</td> <td>{{applicationProfileDetails.techLeadEmail}}</td></tr>
+            <tr><td> TechLead Phone</td> <td>{{applicationProfileDetails.techLeadPhone}}</td></tr>
+            <tr><td> EverBridge Notification Group</td> <td>{{applicationProfileDetails.everBridgeNotificationGroup}}</td></tr>
+        </table>
+    </mat-card>
+    
+</div>

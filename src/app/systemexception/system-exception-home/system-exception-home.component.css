@@ -1,0 +1,174 @@
+table {
+  width: 100%;
+}
+
+tr.example-detail-row {
+  height: 0;
+}
+
+tr.example-element-row:not(.example-expanded-row):hover {
+  background: whitesmoke;
+}
+
+tr.example-element-row:not(.example-expanded-row):active {
+  background: #efefef;
+}
+
+.example-element-row td {
+  border-bottom-width: 0;
+}
+
+.example-element-detail {
+  overflow: hidden;
+  display: flex;
+}
+
+.example-element-diagram {
+  min-width: 80px;
+  border: 2px solid black;
+  padding: 8px;
+  font-weight: lighter;
+  margin: 8px 0;
+  height: 104px;
+}
+
+.example-element-symbol {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: normal;
+}
+
+.example-element-description {
+  padding: 16px;
+}
+
+.example-element-description-attribution {
+  opacity: 0.5;
+}
+
+.matDividerCustomStyle {
+  border-top-width: 3px !important;
+  border-top-color: yellow !important;
+  margin: 5px 0px 10px 0px;
+}
+
+.pageHeaderDiv{
+  width: 100%;
+  height: 50px;
+}
+
+#headerLebelDiv{
+  float: left;
+  width: 30%;
+  font-size: larger;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1% 2% 1% 1%;
+}
+
+#headerActions{
+  float: right;
+  width: 60%;
+  padding: 1% 2% 1% 1%;
+}
+
+
+/* -------------------- FLEX LAYOUT Style*/
+body{
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+}
+
+.container{
+ /* margin: 5px; */
+}
+
+.row{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-01{
+  background: cornflowerblue;
+  position: relative;
+  flex:1;
+  max-width: 22.8%;
+  height: 100px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-02{
+  background: seagreen;
+  position: relative;
+  flex:1;
+  max-width: 25%;
+  height: 150px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-02-02{
+  background: seagreen;
+  position: relative;
+  flex:1;
+  max-width: 480px;
+  height: 150px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-03{
+  background: tomato;
+  position: relative;
+  flex:1;
+  max-width: 1074px;
+  height: 150px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-04{
+  background: wheat;
+  position: relative;
+  flex:1;
+  max-width: 35%;
+  height: 350px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-04-02{
+  background: wheat;
+  position: relative;
+  flex:1;
+  max-width:60%;
+  height: 350px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:800px) {
+  .card-01{
+      flex: 100%;
+      max-width: 600px;
+  }
+  .card-02{
+      flex: 100%;
+      max-width: 600px;
+  }
+  .card-03{
+      flex: 100%;
+      max-width: 600px;
+  }
+
+}

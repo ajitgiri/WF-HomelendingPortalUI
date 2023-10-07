@@ -1,0 +1,59 @@
+<div class="main-div" >
+    <mat-card class="matCard">
+        <mat-tab-group >
+            <mat-tab label="Sign In" >
+                <br>
+                <mat-form-field appearance="outline" style="width: 350px;">
+                    <mat-label>Enter User ID</mat-label>
+                    <input matInput placeholder="Placeholder">
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                    <!-- <mat-hint>Hint</mat-hint> -->
+                  </mat-form-field><br>
+                  <mat-form-field appearance="outline"  style="width: 350px;">
+                    <mat-label>Entered Passowrd</mat-label>
+                    <input matInput required>
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                    <!-- <mat-hint>Hint</mat-hint> -->
+                  </mat-form-field>
+                  <button mat-raised-button color="warn" style="width: 150px;" (click)="onLoggin()">Login</button>&nbsp;&nbsp;
+                  <button mat-raised-button color="primary" style="width: 150px;">Forget Password</button>
+            </mat-tab>
+          
+            <!-- STARTED: Registration Form -->
+            <mat-tab label="Sign Up"> 
+              <mat-form-field appearance="outline" style="width: 350px;">
+                <mat-label>Enter User ID</mat-label>
+                <input matInput placeholder="Placeholder">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <!-- <mat-hint>Hint</mat-hint> -->
+              </mat-form-field> 
+              <mat-form-field appearance="outline"  style="width: 350px; margin-top: -20px;">
+                <mat-label>Entered Passowrd</mat-label>
+                <input matInput required>
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <!-- <mat-hint>Hint</mat-hint> -->
+              </mat-form-field>
+              <mat-form-field appearance="outline" style="width: 350px; margin-top: -20px;">
+                <mat-label>Email Id</mat-label>
+                <input matInput placeholder="Placeholder">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <!-- <mat-hint>Hint</mat-hint> -->
+              </mat-form-field> 
+              <mat-form-field appearance="outline"  style="width: 350px; margin-top: -20px;">
+                <mat-label>Phone</mat-label>
+                <input matInput required>
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <!-- <mat-hint>Hint</mat-hint> -->
+              </mat-form-field>
+              <mat-form-field appearance="outline"  style="width: 350px; margin-top: -20px;">
+                <mat-label>Phone</mat-label>
+                <input matInput required>
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <!-- <mat-hint>Hint</mat-hint> -->
+              </mat-form-field>
+              
+              <button mat-raised-button color="warn" style="width: 150px; margin-left: 95px;" (click)="onRegister()">Register</button>&nbsp;&nbsp;
+            </mat-tab>
+          </mat-tab-group>
+    </mat-card>
+</div>

@@ -1,0 +1,24 @@
+ <div style="position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);
+            width: 60%;height: 59%; ">
+    <h1 style="font-weight: bold; font-size: 50px;">Home Landing Portal HL3DA </h1>
+    <br>
+    <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+        <div class="form-group" >
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required>
+          <small id="emailHelp" *ngIf="email.errors.required">Email id is Required.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" name="password" [(ngModel)]="model.password" #password="ngModel" [ngClass]="{ 'is-invalid': f.submitted && password.invalid }" required >
+          <small id="passwordHelp" *ngIf="password.errors.required">Password is Required.</small>
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button> &nbsp; &nbsp;
+        <button type="reset" class="btn btn-primary">Clear</button>
+      </form>
+</div> 
+

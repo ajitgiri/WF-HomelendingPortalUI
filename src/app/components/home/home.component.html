@@ -1,0 +1,23 @@
+<div class="container" style=" margin-left: 0px; margin-right: 0px;">
+  
+  
+  <div class="body">
+    <app-nav-bar ></app-nav-bar>
+    <!-- <a [routerLink]="['/home/hazardExceptionPage']" routerLinkActive="router-link-active" >Hazard Exception</a> -->
+  <!-- <app-banner *ngIf="router.url == '/'"></app-banner> -->
+
+  <!-- As this CoursesFeaturedComponent is not part of Root or App module but still we want to display
+       here, so we need to follow 2 steps
+    i. Need to EXPORT this component from its respected module (courses.module.ts)
+    2. IMPORT that module in the display module like here (app.module.ts)
+  -->
+  
+  <!-- <app-hazard-exception-details></app-hazard-exception-details>  -->
+ 
+  <!-- <router-outlet></router-outlet>--> 
+  
+</div>
+<br> 
+<!-- Moving footer component down and placing Router-outlet up to display the routing components here -->
+  <app-footer></app-footer>
+</div> 

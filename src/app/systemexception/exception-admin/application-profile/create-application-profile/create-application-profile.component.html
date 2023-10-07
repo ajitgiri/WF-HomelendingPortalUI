@@ -1,0 +1,94 @@
+<div style="width: 100%;">
+    <div class="pageHeaderDiv">
+        <div id="headerLebelDiv">SEW: Create Application Profile</div>
+        <div id="headerActions"> </div>
+        <div id="headerBackBtnDiv"> <button mat-raised-button routerLink='/home/systemexception/exceptionAdmin' color="accent">Back</button></div>
+    </div>
+
+    <mat-divider class="matDividerCustomStyle"></mat-divider>
+
+    <mat-card id="matCardCreateApplication">
+        <div style="width: 100%; height: 30PX;">
+            <div id="createComponentFormHeaderDiv">Component Details</div>
+            <div id="applicationKeyDiv" **ngIf="!isCreate"> Application Key : <b>{{generatedApplicationKey}}</b></div>
+        </div>
+        <form [formGroup]="regAppProfileForm" (ngSubmit)="createApplicationProfile()">
+            <mat-form-field class="matFormFiledStyle">
+                <mat-label>Line Of Business</mat-label>
+                <input matInput formControlName="lineOfBusiness" name="lineOfBusiness">
+            </mat-form-field>
+            <mat-form-field class="matFormFiledStyle">
+                <input matInput placeholder="Application Id" formControlName="applicationId" name="applicationId" [value]="regAppProfileForm.get('applicationId').value |  uppercase ">
+            </mat-form-field>
+            <mat-form-field class="matFormFiledStyle">
+                <input matInput placeholder="Sub Application Id" formControlName="subApplicationId" name="subApplicationId" [value]="regAppProfileForm.get('subApplicationId').value |  uppercase ">
+            </mat-form-field>
+
+            <mat-form-field class="matFormFiledStyle">
+                <input matInput placeholder="CA#" formControlName="ca" name="ca" >
+            </mat-form-field>
+            <mat-form-field class="matFormFiledLargeStyle">
+                <input matInput placeholder="Application URL" formControlName="applicationUrl" name="applicationUrl" >
+            </mat-form-field>
+
+            <mat-form-field class="matFormFiledStyle">
+                <input matInput placeholder="Expected Exception Volume" formControlName="expectedExceptionVolume" name="expectedExceptionVolume" >
+            </mat-form-field>
+            <mat-form-field class="matFormFiledLargeStyle">
+                <textarea matInput placeholder="Description" formControlName="description" name="description" ></textarea>
+            </mat-form-field>
+
+            <div style="width: 100%; height: 30PX;">
+                <div id="createComponentFormHeaderDiv">Additional Links</div>
+                <div id="applicationKeyDiv" **ngIf="!isCreate"> Application Key : <b>{{generatedApplicationKey}}</b></div>
+            </div>
+            <mat-form-field class="matFormFiledXLargeStyle">
+                <input matInput placeholder="AppOne Link" formControlName="appOneLink" name="appOneLink" >
+            </mat-form-field>
+            <mat-form-field class="matFormFiledXLargeStyle">
+                <input matInput placeholder="Agile Registry Link" formControlName="agileRegistryLink" name="agileRegistryLink" >
+            </mat-form-field>
+
+            <div style="width: 100%; height: 30PX;">
+                <div id="createComponentFormHeaderDiv">Contact Details</div>
+                <div id="applicationKeyDiv" **ngIf="!isCreate"> Application Key : <b>{{generatedApplicationKey}}</b></div>
+            </div>
+            <mat-form-field class="matFormFiledStyle">
+                <input matInput placeholder="Team Name" formControlName="teamName" name="teamName" >
+            </mat-form-field>
+            <mat-form-field class="matFormFiledStyle">
+                <input matInput placeholder="TeamMail" formControlName="teamMail" name="teamMail" >
+            </mat-form-field>
+            <mat-form-field class="matFormFiledStyle">
+                <input matInput placeholder="EverBridge Notification Group" formControlName="everBridgeNotificationGroup" name="everBridgeNotificationGroup" >
+            </mat-form-field>
+
+            <mat-form-field class="matFormFiledStyle">
+                <input matInput placeholder="TeachLead Name" formControlName="techLeadName" name="techLeadName" >
+            </mat-form-field>
+            <mat-form-field class="matFormFiledStyle">
+                <input matInput placeholder="TeachLead Email" formControlName="techLeadEmail" name="techLeadEmail" >
+            </mat-form-field>
+            <mat-form-field class="matFormFiledStyle">
+                <input matInput placeholder="TeachLead Phone" formControlName="techLeadPhone" name="techLeadPhone" >
+            </mat-form-field>
+
+            <mat-form-field class="matFormFiledStyle">
+                <input matInput placeholder="Product Owner Name" formControlName="productOwnerName" name="productOwnerName" >
+            </mat-form-field>
+            <mat-form-field class="matFormFiledStyle">
+                <input matInput placeholder="Product Owner Email" formControlName="productOwnerEmail" name="productOwnerEmail" >
+            </mat-form-field>
+            <mat-form-field class="matFormFiledStyle">
+                <input matInput placeholder="Product Owner Phone" formControlName="productOwnerPhone" name="productOwnerPhone" >
+            </mat-form-field>
+
+            <div mat-dialog-actions style="padding: 1% 0% 1% 36.5%;">
+                <button id="clear" mat-button value="Clear" type="reset" class="mat-raised-button mat-primary" style="width: 150px;"> Clear</button> &nbsp; &nbsp;
+                <button id="submitBtn" [disabled]="!regAppProfileForm.valid"  class="mat-raised-button mat-warn" style="width: 150px;">Create</button>
+            </div>
+
+        </form>
+    </mat-card>
+    
+</div>

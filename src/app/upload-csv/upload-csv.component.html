@@ -1,0 +1,28 @@
+<!-- <input type="file" class="file-input"
+       (change)="onFileSelected($event)" #fileUpload>
+
+<div class="file-upload">
+
+   {{fileName || "No file uploaded yet."}}
+
+    <button mat-mini-fab color="primary" class="upload-btn"
+      (click)="fileUpload.click()">
+        <mat-icon>attach_file</mat-icon>
+    </button>
+</div> -->
+
+<input class="form-control mb-5" type="file" class="upload" (change)="changeListener($event.target.files)">
+<br>
+<table class="table table-bordered table-dark mt-5">
+        <thead>
+          <tr>
+            <th *ngFor="let item of lines[0]; let i = index">{{item}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of linesR[1]; let i = index">
+            <td *ngFor="let itemm of lines[1]; let j = index">{{item[j]}}</td>
+            
+          </tr>
+        </tbody>
+      </table>

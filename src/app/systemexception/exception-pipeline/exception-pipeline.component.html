@@ -1,0 +1,80 @@
+<div style="width: 100%;">
+<div class="pageHeaderDiv">
+    <div id="headerLebelDiv">SEW: Exception Pipe Line</div>
+    <div id="headerActions">    </div>
+    <div id="headerBackBtnDiv"> <button mat-raised-button routerLink='/home/systemexception' color="accent">Back</button></div>
+</div>
+  
+  <mat-divider  class="matDividerCustomStyle"></mat-divider>
+
+  <div class="mat-elevation-z8">
+    <mat-paginator #paginator (page)="pageChangeEventButtom($event)"
+    [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <!-- Checkbox Column -->
+        <ng-container matColumnDef="select">
+          <th mat-header-cell *matHeaderCellDef>
+            <mat-checkbox (change)="$event ? masterToggle() : null"
+                          [checked]="selection.hasValue() && isAllSelected()"
+                          [indeterminate]="selection.hasValue() && !isAllSelected()"
+                          [aria-label]="checkboxLabel()">
+            </mat-checkbox>
+          </th>
+          <td mat-cell *matCellDef="let row">
+            <mat-checkbox (click)="$event.stopPropagation()"
+                          (change)="$event ? selection.toggle(row) : null"
+                          [checked]="selection.isSelected(row)"
+                          [aria-label]="checkboxLabel(row)">
+            </mat-checkbox>
+          </td>
+        </ng-container>
+      
+        <!-- Position Column -->
+        <ng-container matColumnDef="Exception Identifier">
+          <th mat-header-cell *matHeaderCellDef> Exception Identifier </th>
+          <td mat-cell *matCellDef="let element"> {{element.headers.productIdentifier}} </td>
+        </ng-container>
+      
+        <!-- Name Column -->
+        <ng-container matColumnDef="Error Message">
+          <th mat-header-cell *matHeaderCellDef> Error Message </th>
+          <td mat-cell *matCellDef="let element"> {{element.exceptionMessage}} </td>
+        </ng-container>
+      
+        <!-- Weight Column -->
+        <ng-container matColumnDef="Exception Type">
+          <th mat-header-cell *matHeaderCellDef> Exception Type </th>
+          <td mat-cell *matCellDef="let element"> {{element.exceptionCodes}} </td>
+        </ng-container>
+      
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="Component">
+          <th mat-header-cell *matHeaderCellDef> Component </th>
+          <td mat-cell *matCellDef="let element"> {{element.headers.senderApplicationId}} - {{element.headers.senderSubApplicationId}} </td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="assignedUser">
+          <th mat-header-cell *matHeaderCellDef> AssignedUser </th>
+          <td mat-cell *matCellDef="let element"> {{element.assignedUsers}}</td>
+        </ng-container>
+
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="Created Date">
+          <th mat-header-cell *matHeaderCellDef> Created Date </th>
+          <td mat-cell *matCellDef="let element"> {{element.headers.creationTimeStamp}}  </td>
+        </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"
+            (click)="selection.toggle(row)">
+        </tr>
+      </table>
+      <mat-paginator (page)="pageChangeEventButtom($event)" 
+                      [pageSize]="paginator.pageSize" [pageIndex]="paginator.pageIndex"
+                      [length]="paginator.length" [pageSizeOptions]="paginator.pageSizeOptions" showFirstLastButtons></mat-paginator>
+      
+    </div>
+</div>

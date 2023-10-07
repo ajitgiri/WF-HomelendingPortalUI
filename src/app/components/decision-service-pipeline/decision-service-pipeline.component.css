@@ -1,0 +1,17 @@
+.matCartd{
+    margin: 10px 0px 0px 0px;
+    width: 49%;
+}
+.matCardTitle{
+    background-color:black;
+    height: 30px;
+    font-weight: 600;
+    font-size: large;
+    padding-top: 4px;
+   color:whitesmoke;
+}
+
+#loanInfoId{
+    margin: 10px 10px 0px 0px;
+    width: 100%;
+}

@@ -1,0 +1,102 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+}
+
+.container{
+ /*  margin: 20px;*/
+}
+
+.row{
+  /*  width: 100%; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-01{
+    background: cornflowerblue;
+    position: relative;
+    flex:1;
+    max-width: 24.5%;
+    height: 100px;
+    margin: 10px 10px 10px 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-02{
+    background: seagreen;
+    position: relative;
+    flex:1;
+    max-width: 30%;
+    height: 150px;
+    margin: 10px 10px 10px 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-02-02{
+    background: seagreen;
+    position: relative;
+    flex:1;
+    max-width: 40%;
+    height: 150px;
+    margin: 10px 10px 10px 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-03{
+    background: tomato;
+    position: relative;
+    flex:1;
+    max-width: 100%;
+    height: 150px;
+    margin: 10px 10px 10px 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-04{
+    background: wheat;
+    position: relative;
+    flex:1;
+    max-width: 48%;
+    height: 350px;
+    margin: 10px 10px 10px 1px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-04-02{
+    background: wheat;
+    position: relative;
+    flex:1;
+    max-width: 49%;
+    height: 350px;
+    margin: 10px 3px 10px 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:800px) {
+    .card-01{
+        flex: 100%;
+        max-width: 600px;
+    }
+    .card-02{
+        flex: 100%;
+        max-width: 600px;
+    }
+    .card-02-02{
+        flex: 100%;
+        max-width: 600px;
+    }
+    .card-03{
+        flex: 100%;
+        max-width: 600px;
+    }
+
+}

@@ -1,0 +1,40 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  mat-toolbar{
+        background-color:#FF1A1A;
+        color: white;
+        border-bottom: .3rem solid yellow;
+  }
+
+  #span-tittle{
+      font-weight: 800;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #profie-button{
+    background-color: white;
+    color: red;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: .5rem solid yellow;
+  }
+
+  #divshow{
+    min-height: 510px ;
+    width: 20%;
+    /*background-color: lawngreen;*/
+    border-right: .3rem solid yellow;
+  }
+
+  .container-body{
+    /* width: 180px;
+    height: 470px !important; */
+  }
+
+  .matSideNav{
+    width: 220px;
+    height: 500px; 
+    border-right: .3rem solid yellow;
+    font-weight: bold;
+  }

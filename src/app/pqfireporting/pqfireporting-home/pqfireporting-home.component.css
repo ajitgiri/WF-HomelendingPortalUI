@@ -1,0 +1,41 @@
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 10px;
+    width: 100%;
+  }
+  
+  td, th {
+    width: 5%;
+    text-align: center;
+    
+  }
+  
+  .txt-align-center{
+    text-align: center;
+    font-weight: bold;
+    font-size: small;
+    color: black;
+  }
+
+  .txt-align-center-dev{
+    text-align: center;
+    font-weight: bold;
+    font-size: small;
+    color: grey;
+    }
+    .txt-align-center-dev{
+    text-align: center;
+    font-weight: bold;
+    font-size: small;
+    color: grey;
+    }
+
+    .txt-align-center-sit{
+      text-align: center;
+      font-weight: bold;
+      font-size: small;
+      color: lightblue;
+      }

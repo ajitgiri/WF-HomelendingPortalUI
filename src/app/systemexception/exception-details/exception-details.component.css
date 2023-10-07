@@ -1,0 +1,31 @@
+.matDividerCustomStyle {
+    border-top-width: 3px !important;
+    border-top-color: yellow !important;
+    margin: 5px 0px 10px 0px;
+  }
+  
+  .pageHeaderDiv{
+    width: 100%;
+    height: 50px;
+  }
+  
+  #headerLebelDiv{
+    float: left;
+    width: 30%;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1% 2% 1% 1%;
+  }
+  
+  #headerActions{
+    float: left;
+    width: 55%;
+    padding: 1% 2% 1% 1%;
+  }
+  
+  #headerBackBtnDiv{
+    width: 6%;
+    float: right;
+    padding: .5% 1% 1% 1%;
+  }
