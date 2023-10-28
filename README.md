@@ -167,3 +167,19 @@ ng g c systemexception/exception-admin/resolution-step-details/viewResolutionSte
 
 ## BACKEND Service used for this app (SEW) :- Wellsfargo-3DA-App-Services
 @@@ ##### **** ==== END STEPS === **** ##### @@@
+
+
+
+## ====================== GIT PUSH ================== ##
+It looks like a very basic question, still follow the below steps
+
+Step 1: You need to create a github repository : WF-HomelendingPortal 
+Step 2: Then copy HTTPS URL of the github repo : https://github.com/ajitgiri/WF-HomelendingPortal.git
+Step 3: Then go to the local repo & make git repo : git int 
+Step 4: Then the local repo with the created remote repo : git remote add origin https://github.com/ajitgiri/WF-HomelendingPortal.git
+Step 5: check now with 						   : git remote -v	 
+Step 6: Then add all files to commit 		   : git add .
+Step 7: Then commit all files 				   : git commit -m "Initial project push"
+Step 8: Then push the code 					   : git push / git push --set-upstream origin master
+
+## ====================== GIT PUSH ================== ##
